@@ -8,14 +8,16 @@
 //Age and Name throws a ReferenceError because it cannot be acccessible outside the block
 
 //Array of Students Objects
-
-const students = [
-  { id: 1, name: "John", score: 38 },
-  { id: 2, name: "Sam", score: 45 },
-  { id: 3, name: "Kate", score: 72 },
-  { id: 4, name: "Pam", score: 80 },
-  { id: 5, name: "Zac", score: 60 },
-];
+document.getElementById("allStudents").addEventListener("click", () => {
+  const students = [
+    { id: 1, name: "John", score: 38 },
+    { id: 2, name: "Sam", score: 45 },
+    { id: 3, name: "Kate", score: 72 },
+    { id: 4, name: "Pam", score: 80 },
+    { id: 5, name: "Zac", score: 60 },
+  ];
+  console.log(students);
+});
 
 const AverageScore = 50;
 

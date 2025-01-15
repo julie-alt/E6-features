@@ -8,7 +8,6 @@
 //Age and Name throws a ReferenceError because it cannot be acccessible outside the block
 
 //Array of Students Objects
-document.getElementById("allStudents").addEventListener("click", () => {
   const students = [
     { id: 1, name: "John", score: 38 },
     { id: 2, name: "Sam", score: 45 },
@@ -16,10 +15,12 @@ document.getElementById("allStudents").addEventListener("click", () => {
     { id: 4, name: "Pam", score: 80 },
     { id: 5, name: "Zac", score: 60 },
   ];
+ 
+const AverageScore = 50;
+
+document.getElementById("studentsList").addEventListener("click", () => {
   console.log(students);
 });
-
-const AverageScore = 50;
 
 //Arrow function and reduce to find students above average score
 document.getElementById("passingStudents").addEventListener("click", () => {
